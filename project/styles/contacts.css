@@ -44,11 +44,11 @@
     transition: 1s ease-out;
 }
 
-.contact-title , .contact-text::first-letter , .contact-name::first-letter , .hidden-warn::first-letter {
+.contact-title , .contact-text::first-letter , .contact-name::first-letter , .hidden-warn::first-letter , .map__title::first-letter {
     text-transform: uppercase;
 }
 
-.contact-title {
+.contact-title , .map__title {
     font: var(--mini-headers-font);
 }
 
@@ -177,6 +177,12 @@
 .map {
     background-color: #FFF;
     height: 100%;
+    text-align: center;
+}
+
+.map__title {
+    margin: 20px 0;
+    color: var(--main-color);
 }
 
 .here {

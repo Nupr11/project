@@ -1,27 +1,119 @@
 @import url("/project/styles/main.css");
 
-.explore {
+.explore , .stat-list, .app {
     display: flex;
-    flex-flow: row;
+    flex-flow: row wrap;
+}
+
+.explore , .app {
+    gap: 20px;
+}
+
+.stat-list {
+    padding: 10px;
+    max-width: 590px;
+    gap: 1px;
 }
 
 .explore__box {
+    padding: 15px;
+    max-width: 570px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
     align-items: flex-start;
+    gap: 30px;
+
 }
 
-.explore__title, .explore__text::first-letter {
+.explore__title, .explore__text::first-letter , .stat-item-description::first-letter , .app__title::first-letter {
     text-transform: uppercase;
 }
 
-.explore__title {
+.explore__title , .app__title  {
     color: var(--main-color);
-    font: var(--mini-headers-font);
-    
+    font: var(--post-headers-font);
+    border-bottom: 1px solid var(--main-color);
 }
 
-.explore__text {
+.app__title  {
+    border: 0;
+}
+
+.explore__text , .source , .stat-item-description , .stat-item:last-child > .stat-item-description , .app__text  {
     font: var(--secondary-text-font)
 }
+
+.stat-item:last-child > .stat-item-digital  {
+    font: var(--post-headers-font);
+}
+
+.stat-item-digital {
+    margin-bottom: 20px;
+    font: var(--mini-headers-font);
+}
+
+.stat-item-description , .app__text  {
+    margin: 20px 0;
+}
+
+.stat-item {
+    color: #FFF;
+    background-color: var(--main-color);
+}
+
+.stat-item:last-child {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transform: scale(1.2);
+    border-radius: 10px;
+    color: var(--main-color);
+    background-color: #FFF;
+}
+
+.stat-item:last-child > .stat-item-description  {
+    margin: 0 0 10px 0;
+}
+
+.app {
+    background: url(/project/assets/img/wave-bottom.png) no-repeat top center / 100% 150px, #fff;
+}
+
+.button-stat ,.stat-item , .app__device , .app__download  {
+    padding: 15px;
+}
+
+.stat-item , .app__device , .app__download {
+    flex-grow: 1;
+    text-align: center;
+    width: 49%;
+}
+
+.app__device {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.load {
+    width: 200px;
+    height: 64px;
+}
+
+.device:first-child {
+    height: 80%;
+}
+
+@media screen and (max-width: 520px) {
+
+    .device:first-child {
+        display: none;
+    }
+
+    .app {
+        background: url(/project/assets/img/wave-bottom.png) no-repeat top center / 100% 70px, #fff;
+    }
+}
+
+

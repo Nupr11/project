@@ -28,7 +28,6 @@
 
 .advantages-item {
     padding: 10px;
-    border: 1px solid var(--main-color);
     border-radius: 10px;
     box-shadow: 0 0 40px 0 rgb(73 50 156 / 20%);
 }

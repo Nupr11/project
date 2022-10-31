@@ -18,6 +18,7 @@
     --mini-headers-font: 36px/40px "comfortaa bold", sans-serif;
     --post-headers-font: 24px/28px "comfortaa medium", sans-serif;
     --secondary-text-font: 14px/14px "comfortaa light", sans-serif;
+    --button-font: 14px/14px "comfortaa semibold", sans-serif;
 
 }
 
@@ -65,9 +66,10 @@ section {
     border: 0;
     transition: .3s;
     cursor: pointer;
+    font: var(--button-font);
 }
 
-.button , .header {
+.header {
     font: 14px/16px "comfortaa semibold", sans-serif;
 }
 
@@ -209,6 +211,7 @@ section {
 }
 
 .hidden-text {
+    display: block;
     text-align: left;
     padding: 0 15px;
     height: auto;
@@ -261,7 +264,7 @@ section {
     max-height: 1000px;
 }
 
-.issue:checked + p > .arrow::before {
+.issue:checked + span > .arrow::before {
     opacity: 0;
 }
 
@@ -349,7 +352,7 @@ section {
     background: url("/project/assets/img/wave-bottom.png") no-repeat top center / 100% 150px , var(--main-color);
 }
 
-.slogan > p {
+.slogan > h2 {
     font: var(--headers-font);
     color: #FFF;
 }
@@ -450,6 +453,8 @@ section {
         --headers-font: 64px/80px "comfortaa bold", sans-serif;
         --mini-headers-font: 30px/34px "comfortaa bold", sans-serif;
         --post-headers-font: 24px/28px "comfortaa medium", sans-serif;
+        --secondary-text-font: 14px/14px "comfortaa light", sans-serif;
+        --button-font: 14px/14px "comfortaa semibold", sans-serif;
     }
 
     body.fix {
@@ -552,6 +557,7 @@ section {
         --headers-font: 54px/70px "comfortaa bold", sans-serif;
         --mini-headers-font: 30px/36px "comfortaa bold", sans-serif;
         --post-headers-font: 18px/24px "comfortaa medium", sans-serif;
+        --secondary-text-font: 13px/13px "comfortaa light", sans-serif;
     }
 }    
 
@@ -562,6 +568,8 @@ section {
         --headers-font: 40px/50px "comfortaa bold", sans-serif;
         --mini-headers-font: 28px/28px "comfortaa bold", sans-serif;
         --post-headers-font: 16px/18px "comfortaa medium", sans-serif;
+        --secondary-text-font: 12px/12px "comfortaa light", sans-serif;
+        --button-font: 12px/12px "comfortaa semibold", sans-serif;
     }
 
     .footer-info {
@@ -582,6 +590,8 @@ section {
         --headers-font: 30px/40px "comfortaa bold", sans-serif;
         --mini-headers-font: 24px/24px "comfortaa bold", sans-serif;
         --post-headers-font: 14px/16px "comfortaa medium", sans-serif;
+        --secondary-text-font: 11px/11px "comfortaa light", sans-serif;
+        --button-font: 11px/11px "comfortaa semibold", sans-serif;
     }
 
     .button {
@@ -611,5 +621,7 @@ section {
         --headers-font: 24px/34px "comfortaa bold", sans-serif;
         --mini-headers-font: 22px/24px "comfortaa bold", sans-serif;
         --post-headers-font: 12px/16px "comfortaa medium", sans-serif;
+        --secondary-text-font: 10px/10px "comfortaa light", sans-serif;
+        --button-font: 11px/11px "comfortaa semibold", sans-serif;
     }
 } 
