@@ -1,0 +1,226 @@
+@import url("/project/styles/main.css");
+
+.contact-order {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 20px;
+    position: relative;
+    opacity: 0;
+    transition: 3s;
+}
+
+.contact-order.active {
+    opacity: 1;
+    justify-content: center;
+}
+
+.contact-order::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    background: url("/project/assets/img/wave-bottom.png") no-repeat bottom center / 100% 150px , #FFF;
+}
+
+.contact-container , .contact-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-container {
+    max-width: 500px;
+    justify-content: flex-start;
+    color: var(--main-color);
+    transform: translateX(-120%);
+
+}
+
+.contact-container.active {
+    transform: translateX(0%);
+    transition: 1s ease-out;
+}
+
+.contact-title , .contact-text::first-letter , .contact-name::first-letter , .hidden-warn::first-letter {
+    text-transform: uppercase;
+}
+
+.contact-title {
+    font: var(--mini-headers-font);
+}
+
+.contact-text {
+    font: var(--post-headers-font);
+}
+
+.contact-box {
+    width: 100%;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: var(--main-color);
+    box-shadow: 0px 0px 50px 10px #49329c33;
+}
+
+.contact-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid transparent;
+    transition: .3s;
+}
+
+.contact-name {
+    width: 100%;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.contact-item:hover {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #FFF;
+}
+
+.contact-icon-size {
+    width: 40px;
+    height: 40px;
+}
+
+.contact-icon {
+    fill: #FFF;
+}
+
+.contact-box , .contact-name {
+    font: 16px/22px "comfortaa medium", sans-serif;
+    color: #FFF;
+}
+
+.contact-data , .personal-data + span  {
+    font: var(--secondary-text-font);
+    color: var(--secondary-text-color);
+}
+
+.form-order {
+    max-width: 600px;
+    padding: 40px 40px 150px 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    border-radius: 10px;
+    background-color: #FFF;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+}
+
+.label:nth-child(-n+4) {
+    width: 49%;
+}
+
+.label-check {
+    flex-direction: row;
+}
+
+
+.label > input  , .textarea {
+    width: 100%;
+    padding: 20px 10px;
+    border-radius: 3px;
+    background-color: var(--input-bg-color);
+    border: 1px solid #cccccc;
+}
+
+::placeholder {
+    font: var(--secondary-text-font);
+    color: #cccccc;
+}
+
+.personal-data + span {
+    color: #333;
+}
+
+.hidden-warn {
+    display: none;
+}
+
+.textarea {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 200px;
+    resize: none;
+}
+
+.label:last-child {
+    flex-direction: row;
+}
+.personal-data {
+    margin-right: 10px;;
+}
+
+.button::first-letter {
+    text-transform: uppercase;
+}
+
+.button-send {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.map {
+    background-color: #FFF;
+    height: 100%;
+}
+
+.here {
+    width: 100%;
+    height: 450px;
+    transition: 1s;
+    border-radius: 15px;
+    box-shadow: 0 0 40px 0 rgb(73 50 156 / 20%);
+    border: 2px solid #FFF;
+}
+
+.here:hover {
+    box-shadow: 0 0 900px 0 rgb(73 50 156 / 50%);
+}
+
+@media screen and (max-width: 720px) {
+    
+    .label:nth-child(-n+4) {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    
+    :root {
+        --secondary-text-font: 10px/10px "comfortaa light", sans-serif;
+    }
+
+    .here {
+        height: 320px;
+    }
+
+    .form-order {
+        padding: 20px 20px 100px 20px;
+    }
+
+    .contact-box {
+        padding: 15px;
+    }
+
+    .contact-name {
+    font: 14px/16px "comfortaa medium", sans-serif;
+    }
+
+}
+
+

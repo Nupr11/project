@@ -1,0 +1,130 @@
+@import url("/project/styles/main.css");
+
+
+.brends , .advantages , .tech , .advantages-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+}
+
+.brends__title , .advantages__title , .tech__title {
+    font: var( --headers-font); 
+}
+
+.brends__title::first-letter , .advantages__title::first-letter , .brends__text::first-letter , .advantage-title::first-letter , .advantage-description::first-letter , .tech__title::first-letter , .tech-text::first-letter {
+    text-transform: uppercase;
+}
+
+.brends__text {
+    font: var(--post-headers-font); 
+}
+
+.brends__title , .advantages__title , .brends__text , .advantage-title , .tech__title , .tech-text {
+    color: var(--main-color);
+}
+
+.advantages-item {
+    padding: 10px;
+    border: 1px solid var(--main-color);
+    border-radius: 10px;
+    box-shadow: 0 0 40px 0 rgb(73 50 156 / 20%);
+}
+
+.advantage-description , .tech-text {
+    color: var(--secondary-text-color);
+    font: var(--secondary-text-font);
+}
+
+.advantage-title {
+    font: 18px/20px "comfortaa bold", sans-serif;
+}
+
+.brends__list  , .advantages__list , .tech__list {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 60px;
+}
+
+.brend-item , .brend-item-small {
+    padding: 50px 30px;
+    max-width: 260px;
+    max-height: 210px;
+}
+
+.brend-item , .brend-item-small , .tech__item {
+    border-radius: 10px;
+    background-color: #FFF;
+
+}
+
+.brend-item-small {
+    padding: 30px;
+    max-width: 206px;
+    max-height: 170px;
+}
+
+.brend-image {
+    width: 100%;
+    height: 100%;
+}
+
+.advantages-item {
+    max-width: 280px;
+    text-align: center;
+}
+
+.advantages-item > div {
+    height: 100%;
+}
+
+.advantage-description {
+    padding-top: 20px;
+    gap: 50px;
+    height: 100%;
+} 
+
+.advantages-icon {
+    width: 100px;
+    height: 100px;
+    padding-bottom: 15px;
+}
+
+.icon-color , .tech-icon-color {
+    fill: var(--main-color)
+}
+
+.tech__item {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 480px;
+    box-shadow: 0 0 30px 0 rgb(73 50 156 / 20%);
+    transition: .3s;
+}
+
+.tech__item:hover {
+    box-shadow: 0 0 0 0 rgb(73 50 156 / 20%);
+}
+
+.tech-icon {
+    width: 100%;
+    max-width: 40px;
+    height : 40px;
+}
+
+@media screen and (max-width: 720px) {
+
+    .brend-item , .brend-item-small {
+        padding: 40px 20px;
+        max-width: 200px;
+        max-height: 150px;
+    }
+}    
+    

@@ -1,0 +1,27 @@
+@import url("/project/styles/main.css");
+
+.explore {
+    display: flex;
+    flex-flow: row;
+}
+
+.explore__box {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.explore__title, .explore__text::first-letter {
+    text-transform: uppercase;
+}
+
+.explore__title {
+    color: var(--main-color);
+    font: var(--mini-headers-font);
+    
+}
+
+.explore__text {
+    font: var(--secondary-text-font)
+}
