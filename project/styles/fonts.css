@@ -1,6 +1,6 @@
 @font-face {
     font-family: "comfortaa medium";
-    src: url("/project/assets/fonts/Comfortaa/static/Comfortaa-Medium.ttf");
+    src: url("/assets/fonts/Comfortaa/static/Comfortaa-Medium.ttf");
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: "comfortaa semibold";
-    src: url("/project/assets/fonts/Comfortaa/static/Comfortaa-SemiBold.ttf");
+    src: url("/assets/fonts/Comfortaa/static/Comfortaa-SemiBold.ttf");
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: "comfortaa bold";
-    src: url("/project/assets/fonts/Comfortaa/static/Comfortaa-Bold.ttf");
+    src: url("/assets/fonts/Comfortaa/static/Comfortaa-Bold.ttf");
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -24,7 +24,7 @@
 
 @font-face {
     font-family: "comfortaa regular";
-    src: url("/project/assets/fonts/Comfortaa/static/Comfortaa-Regular.ttf");
+    src: url("/assets/fonts/Comfortaa/static/Comfortaa-Regular.ttf");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -32,7 +32,7 @@
 
 @font-face {
     font-family: "comfortaa light";
-    src: url("/project/assets/fonts/Comfortaa/static/Comfortaa-Light.ttf");
+    src: url("/assets/fonts/Comfortaa/static/Comfortaa-Light.ttf");
     font-weight: 300;
     font-style: normal;
     font-display: swap;

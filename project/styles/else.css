@@ -1,4 +1,4 @@
-@import url("/project/styles/main.css");
+@import url("main.css");
 
 .explore , .stat-list, .app {
     display: flex;
@@ -77,7 +77,7 @@
 }
 
 .app {
-    background: url(/project/assets/img/wave-bottom.png) no-repeat top center / 100% 150px, #fff;
+    background: url("/assets/img/wave-bottom.png") no-repeat top center / 100% 150px, #fff;
 }
 
 .button-stat ,.stat-item , .app__device , .app__download  {
@@ -112,7 +112,7 @@
     }
 
     .app {
-        background: url(/project/assets/img/wave-bottom.png) no-repeat top center / 100% 70px, #fff;
+        background: url("/assets/img/wave-bottom.png") no-repeat top center / 100% 70px, #fff;
     }
 }
 

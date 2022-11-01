@@ -1,4 +1,4 @@
-@import url("/project/styles/main.css");
+@import url("main.css");
 
 .contact-order {
     display: flex;
@@ -22,7 +22,7 @@
     bottom: 0;
     width: 100%;
     height: 150px;
-    background: url("/project/assets/img/wave-bottom.png") no-repeat bottom center / 100% 150px , #FFF;
+    background: url("/assets/img/wave-bottom.png") no-repeat bottom center / 100% 150px , #FFF;
 }
 
 .contact-container , .contact-box {
@@ -148,6 +148,11 @@
 
 .hidden-warn {
     display: none;
+}
+
+.hidden-warn.show {
+    display: block;
+    color: red;
 }
 
 .textarea {
